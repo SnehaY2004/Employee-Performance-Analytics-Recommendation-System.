@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.16), transparent 28%),
+    linear-gradient(180deg, #020617 0%, #111827 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+button,
+a {
+  transition: all 200ms ease;
+}
